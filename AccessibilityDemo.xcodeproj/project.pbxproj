@@ -154,14 +154,10 @@
 		D4CEB14C2BC19A3F005A8867 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				D4CEB1602BC2C5E3005A8867 /* CreateAccountViewController.swift */,
-				D4CEB1622BC2C71B005A8867 /* CreateAccountAccessibility.swift */,
-				D4CEB1532BC2A8CF005A8867 /* HomeViewController.swift */,
-				D4CEB1572BC2BAED005A8867 /* HomeAccessibility.swift */,
-				D4CEB14A2BC199F6005A8867 /* LoginViewController.swift */,
-				D4CEB15A2BC2BB72005A8867 /* LoginAccessibility.swift */,
-				D4CEB11A2BC19465005A8867 /* OnboardingViewController.swift */,
-				D4CEB15D2BC2BBA4005A8867 /* OnboardingAccessibility.swift */,
+				D4CEB1642BC2DAE9005A8867 /* CreateAccount */,
+				D4CEB1652BC2DAF0005A8867 /* Home */,
+				D4CEB1662BC2DAF5005A8867 /* Login */,
+				D4CEB1672BC2DAFA005A8867 /* Onboarding */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -182,6 +178,42 @@
 				D4CEB1512BC19C1C005A8867 /* UIStoryboard+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D4CEB1642BC2DAE9005A8867 /* CreateAccount */ = {
+			isa = PBXGroup;
+			children = (
+				D4CEB1602BC2C5E3005A8867 /* CreateAccountViewController.swift */,
+				D4CEB1622BC2C71B005A8867 /* CreateAccountAccessibility.swift */,
+			);
+			path = CreateAccount;
+			sourceTree = "<group>";
+		};
+		D4CEB1652BC2DAF0005A8867 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D4CEB1532BC2A8CF005A8867 /* HomeViewController.swift */,
+				D4CEB1572BC2BAED005A8867 /* HomeAccessibility.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D4CEB1662BC2DAF5005A8867 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D4CEB14A2BC199F6005A8867 /* LoginViewController.swift */,
+				D4CEB15A2BC2BB72005A8867 /* LoginAccessibility.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		D4CEB1672BC2DAFA005A8867 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				D4CEB11A2BC19465005A8867 /* OnboardingViewController.swift */,
+				D4CEB15D2BC2BBA4005A8867 /* OnboardingAccessibility.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
