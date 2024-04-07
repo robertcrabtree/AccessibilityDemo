@@ -19,7 +19,7 @@ final class AccessibilityDemoUITests: XCTestCase {
     }
 
     func testLoginFlow() {
-        app.buttons[OnboardingAccessibility.loginButton].tap()
+        app.buttons[WelcomeAccessibility.loginButton].tap()
 
         // Wait for login view to appear
         XCTAssertTrue(app.textFields[LoginAccessibility.emailTextField].waitForExistence(timeout: 5))
@@ -45,7 +45,7 @@ final class AccessibilityDemoUITests: XCTestCase {
 }
 
 extension XCUIElementQuery {
-    subscript(key: OnboardingAccessibility) -> XCUIElement {
+    subscript(key: WelcomeAccessibility) -> XCUIElement {
         self[key.rawValue]
     }
     subscript(key: LoginAccessibility) -> XCUIElement {

@@ -15,9 +15,6 @@ protocol LogoutHandler: AnyObject {
 class HomeViewController: UIViewController {
 
     // MARK: - IBOutlets
-
-    @IBOutlet weak var welcomeLabel: UILabel!
-
     // MARK: - Variables
 
     lazy var logoutButton = UIBarButtonItem(

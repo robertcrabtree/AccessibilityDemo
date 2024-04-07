@@ -1,5 +1,5 @@
 //
-//  OnboardingViewController.swift
+//  WelcomeViewController.swift
 //  AccessibilityDemo
 //
 //  Created by Robert Crabtree on 4/6/24.
@@ -8,7 +8,7 @@
 import UIKit
 import AccessibilityTypes
 
-class OnboardingViewController: UIViewController {
+class WelcomeViewController: UIViewController {
 
     // MARK: - IBOutlets
 
@@ -56,7 +56,7 @@ class OnboardingViewController: UIViewController {
 // MARK: - UIAccessibilityIdentification
 
 fileprivate extension UIAccessibilityIdentification {
-    var testID: OnboardingAccessibility? {
+    var testID: WelcomeAccessibility? {
         get { fatalError() }
         set { accessibilityIdentifier = newValue?.rawValue }
     }

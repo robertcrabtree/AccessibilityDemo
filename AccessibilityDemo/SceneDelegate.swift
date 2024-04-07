@@ -14,12 +14,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
-        window?.rootViewController = makeOnboardingViewController()
+        window?.rootViewController = makeWelcomeViewController()
         window?.makeKeyAndVisible()
     }
 
-    private func makeOnboardingViewController() -> UIViewController {
-        let vc = UIStoryboard.main.viewController(OnboardingViewController.self)
+    private func makeWelcomeViewController() -> UIViewController {
+        let vc = UIStoryboard.main.viewController(WelcomeViewController.self)
         vc.loginHandler = self
         vc.createAccountHandler = self
         let nav = UINavigationController(rootViewController: vc)
@@ -59,6 +59,6 @@ extension SceneDelegate: CreateAccountHandler {
 
 extension SceneDelegate: LogoutHandler {
     func didLogout() {
-        transition(to: makeOnboardingViewController())
+        transition(to: makeWelcomeViewController())
     }
 }
