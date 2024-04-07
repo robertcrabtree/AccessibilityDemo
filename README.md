@@ -60,7 +60,7 @@ private func configureAccessibility() {
 }
 ```
 
-For convenience, define an extension in your UI test target.
+Now let's shift our attention to the test case. But first, let's implement a handy extension that allows us to use the accessibility enum as a subscript key.
 
 ```swift
 extension XCUIElementQuery {
@@ -70,7 +70,7 @@ extension XCUIElementQuery {
 }
 ```
 
-Now write your test case.
+And finally, let's write the test case!
 
 ```swift
 func testLoginFlow() {
