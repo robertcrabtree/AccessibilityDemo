@@ -32,7 +32,7 @@ fileprivate extension UIAccessibilityIdentification {
 }
 ```
 
-Also in your view controller file, define a method that configures all of your accessibility elements. Then call the method from `viewDidLoad()`.
+Also in your view controller file, define a method that configures accessibility your all of your view components. Then call the method from `viewDidLoad()`.
 
 ```swift
 private func configureAccessibility() {
