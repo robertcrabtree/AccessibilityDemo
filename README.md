@@ -1,6 +1,6 @@
 This project demonstrates how to define and use enums for accessibility in UI testing on the iOS platorm.
 
-In a new file, separate from your view controller, define your accessibilty enum.
+In a new file, separate from your view controller file, define your accessibilty enum.
 
 ```swift
 enum OnboardingAccessibility: String {
@@ -32,6 +32,16 @@ Also in your view controller file, define a method that configures all of your a
 private func configureAccessibility() {
     loginButton.testID = .loginButton
     createAccountButton.testID = .createAccountButton
+}
+```
+
+For convenience, define an extension in your UI test target.
+
+```swift
+extension XCUIElementQuery {
+    subscript(key: OnboardingAccessibility) -> XCUIElement {
+        self[key.rawValue]
+    }
 }
 ```
 
