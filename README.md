@@ -1,12 +1,20 @@
 This project demonstrates how to define and use enums for accessibility in UI testing on the iOS platorm.
 
-Let's use this screen as an example.
+The first thing you need to do is create a static library for your acessibility types:
+
+File -> New -> Target -> Static Library -> AccessibilityTypes
+
+Navigate to your project file. You need to link the new library to your app and UI test targets. Do this for both targets:
+
+<img width="1127" alt="library" src="https://github.com/robertcrabtree/AccessibilityDemo/assets/924214/7e930123-1604-43a3-8573-4f6cf4bd658d">
+
+Now let's use this screen as an example.
 
 ![onboarding-screen](https://github.com/robertcrabtree/AccessibilityDemo/assets/924214/8b2f4427-c99b-4527-a861-563d64ebf341)
 
 Now do the following:
 
-In a new file, separate from your view controller file, define your accessibilty enum.
+Add a new file to the `AccessibilityTypes` target and define your accessibilty enum.
 
 ```swift
 enum OnboardingAccessibility: String {
@@ -15,10 +23,9 @@ enum OnboardingAccessibility: String {
 }
 ```
 
-From the file inspector, ensure that membership is applied to the app target as well as the UI test target
+From the file inspector, ensure that target membership is applied to the static library.
 
-
-<img width="258" alt="target-membership" src="https://github.com/robertcrabtree/AccessibilityDemo/assets/924214/65359da9-e1f2-4878-bedc-bffd6bfda022">
+<img width="259" alt="target-membership" src="https://github.com/robertcrabtree/AccessibilityDemo/assets/924214/e55da8a2-4168-43d6-a4ba-41c5ea183700">
 
 
 In your view controller file, define a `fileprivate` extension to `UIAccessibilityIdentification` that implements a computed property wrapping the `accessibilityIdentifier` property.
@@ -30,6 +37,12 @@ fileprivate extension UIAccessibilityIdentification {
         set { accessibilityIdentifier = newValue?.rawValue }
     }
 }
+```
+
+And don't forget to import the static library:
+
+```swift
+import AccessibilityTypes
 ```
 
 Also in your view controller file, define a method that configures accessibility your all of your view components. Then call the method from `viewDidLoad()`.
