@@ -15,17 +15,13 @@ class OnboardingViewController: UIViewController {
     @IBOutlet weak var createAccountButton: UIButton!
 
     @IBAction func didTapLogin() {
-        let vc = UIStoryboard.main.instantiateViewController(
-            withIdentifier: "LoginViewController"
-        ) as! LoginViewController
+        let vc = UIStoryboard.main.viewController(LoginViewController.self)
         vc.loginHandler = loginHandler
         navigationController?.pushViewController(vc, animated: true)
     }
 
     @IBAction func didTapCreateAccount() {
-        let vc = UIStoryboard.main.instantiateViewController(
-            withIdentifier: "CreateAccountViewController"
-        ) as! CreateAccountViewController
+        let vc = UIStoryboard.main.viewController(CreateAccountViewController.self)
         vc.createAccountHandler = createAccountHandler
         navigationController?.pushViewController(vc, animated: true)
     }

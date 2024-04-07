@@ -48,9 +48,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     private func makeOnboardingViewController() -> UIViewController {
-        let vc = UIStoryboard.main.instantiateViewController(
-            withIdentifier: "OnboardingViewController"
-        ) as! OnboardingViewController
+        let vc = UIStoryboard.main.viewController(OnboardingViewController.self)
         vc.loginHandler = self
         vc.createAccountHandler = self
         let nav = UINavigationController(rootViewController: vc)
@@ -58,11 +56,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     private func makeHomeViewController() -> UIViewController {
-        let vc = UIStoryboard.main.instantiateViewController(
-            withIdentifier: "HomeViewController"
-        ) as! HomeViewController
-        let nav = UINavigationController(rootViewController: vc)
+        let vc = UIStoryboard.main.viewController(HomeViewController.self)
         vc.logoutHandler = self
+        let nav = UINavigationController(rootViewController: vc)
         return nav
     }
 }
