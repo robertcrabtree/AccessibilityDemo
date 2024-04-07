@@ -20,10 +20,10 @@ Now let's use this screen as an example.
 
 ![onboarding-screen](https://github.com/robertcrabtree/AccessibilityDemo/assets/924214/8b2f4427-c99b-4527-a861-563d64ebf341)
 
-Add a new file to the `AccessibilityTypes` target and define your accessibilty enum.
+Add a new file to the `AccessibilityTypes` target and define your accessibilty enum. Make sure it is `public`.
 
 ```swift
-enum OnboardingAccessibility: String {
+public enum OnboardingAccessibility: String {
     case loginButton
     case createAccountButton
 }
