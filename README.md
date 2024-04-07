@@ -12,7 +12,7 @@ File -> New -> Target -> Static Library -> AccessibilityTypes
 
 Navigate to your project file. You need to link the new library to your app and UI test targets. Do this for both targets:
 
-<img width="1127" alt="library" src="https://github.com/robertcrabtree/AccessibilityDemo/assets/924214/7e930123-1604-43a3-8573-4f6cf4bd658d">
+<img width="1127" alt="library" src="https://github.com/robertcrabtree/AccessibilityDemo/assets/924214/8366b1ee-3643-4473-bf40-7e0f2b9b9c6b">
 
 # Example
 
