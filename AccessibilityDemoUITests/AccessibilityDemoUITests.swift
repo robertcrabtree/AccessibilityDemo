@@ -6,6 +6,7 @@
 //
 
 import XCTest
+import AccessibilityTypes
 
 final class AccessibilityDemoUITests: XCTestCase {
     let app = XCUIApplication()

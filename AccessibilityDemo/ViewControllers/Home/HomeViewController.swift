@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AccessibilityTypes
 
 protocol LogoutHandler: AnyObject {
     func didLogout()

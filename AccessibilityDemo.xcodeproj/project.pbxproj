@@ -21,14 +21,14 @@
 		D4CEB1522BC19C1C005A8867 /* UIStoryboard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB1512BC19C1C005A8867 /* UIStoryboard+Extensions.swift */; };
 		D4CEB1542BC2A8CF005A8867 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB1532BC2A8CF005A8867 /* HomeViewController.swift */; };
 		D4CEB1562BC2AE61005A8867 /* Optional+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB1552BC2AE61005A8867 /* Optional+Extensions.swift */; };
-		D4CEB1582BC2BAED005A8867 /* HomeAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB1572BC2BAED005A8867 /* HomeAccessibility.swift */; };
-		D4CEB1592BC2BB23005A8867 /* HomeAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB1572BC2BAED005A8867 /* HomeAccessibility.swift */; };
-		D4CEB15B2BC2BB72005A8867 /* LoginAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB15A2BC2BB72005A8867 /* LoginAccessibility.swift */; };
-		D4CEB15C2BC2BB99005A8867 /* LoginAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB15A2BC2BB72005A8867 /* LoginAccessibility.swift */; };
-		D4CEB15E2BC2BBA4005A8867 /* OnboardingAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB15D2BC2BBA4005A8867 /* OnboardingAccessibility.swift */; };
-		D4CEB15F2BC2BBFA005A8867 /* OnboardingAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB15D2BC2BBA4005A8867 /* OnboardingAccessibility.swift */; };
 		D4CEB1612BC2C5E3005A8867 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB1602BC2C5E3005A8867 /* CreateAccountViewController.swift */; };
-		D4CEB1632BC2C71B005A8867 /* CreateAccountAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB1622BC2C71B005A8867 /* CreateAccountAccessibility.swift */; };
+		D4CEB1802BC32282005A8867 /* AccessibilityTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB17F2BC32282005A8867 /* AccessibilityTypes.swift */; };
+		D4CEB1842BC32287005A8867 /* OnboardingAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB15D2BC2BBA4005A8867 /* OnboardingAccessibility.swift */; };
+		D4CEB1852BC32287005A8867 /* HomeAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB1572BC2BAED005A8867 /* HomeAccessibility.swift */; };
+		D4CEB1862BC32287005A8867 /* CreateAccountAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB1622BC2C71B005A8867 /* CreateAccountAccessibility.swift */; };
+		D4CEB1872BC32287005A8867 /* LoginAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB15A2BC2BB72005A8867 /* LoginAccessibility.swift */; };
+		D4CEB18A2BC32475005A8867 /* libAccessibilityTypes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4CEB17D2BC32282005A8867 /* libAccessibilityTypes.a */; };
+		D4CEB18B2BC324B0005A8867 /* libAccessibilityTypes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4CEB17D2BC32282005A8867 /* libAccessibilityTypes.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +47,18 @@
 			remoteInfo = AccessibilityDemo;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D4CEB17B2BC32282005A8867 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D4CEB1132BC19465005A8867 /* AccessibilityDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AccessibilityDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +84,8 @@
 		D4CEB15D2BC2BBA4005A8867 /* OnboardingAccessibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingAccessibility.swift; sourceTree = "<group>"; };
 		D4CEB1602BC2C5E3005A8867 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		D4CEB1622BC2C71B005A8867 /* CreateAccountAccessibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountAccessibility.swift; sourceTree = "<group>"; };
+		D4CEB17D2BC32282005A8867 /* libAccessibilityTypes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAccessibilityTypes.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4CEB17F2BC32282005A8867 /* AccessibilityTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityTypes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4CEB18A2BC32475005A8867 /* libAccessibilityTypes.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +105,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D4CEB1302BC19466005A8867 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4CEB18B2BC324B0005A8867 /* libAccessibilityTypes.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4CEB17A2BC32282005A8867 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -105,7 +128,9 @@
 				D4CEB1152BC19465005A8867 /* AccessibilityDemo */,
 				D4CEB12C2BC19466005A8867 /* AccessibilityDemoTests */,
 				D4CEB1362BC19466005A8867 /* AccessibilityDemoUITests */,
+				D4CEB17E2BC32282005A8867 /* AccessibilityTypes */,
 				D4CEB1142BC19465005A8867 /* Products */,
+				D4CEB1882BC323C2005A8867 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +140,7 @@
 				D4CEB1132BC19465005A8867 /* AccessibilityDemo.app */,
 				D4CEB1292BC19466005A8867 /* AccessibilityDemoTests.xctest */,
 				D4CEB1332BC19466005A8867 /* AccessibilityDemoUITests.xctest */,
+				D4CEB17D2BC32282005A8867 /* libAccessibilityTypes.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -184,7 +210,6 @@
 			isa = PBXGroup;
 			children = (
 				D4CEB1602BC2C5E3005A8867 /* CreateAccountViewController.swift */,
-				D4CEB1622BC2C71B005A8867 /* CreateAccountAccessibility.swift */,
 			);
 			path = CreateAccount;
 			sourceTree = "<group>";
@@ -193,7 +218,6 @@
 			isa = PBXGroup;
 			children = (
 				D4CEB1532BC2A8CF005A8867 /* HomeViewController.swift */,
-				D4CEB1572BC2BAED005A8867 /* HomeAccessibility.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -202,7 +226,6 @@
 			isa = PBXGroup;
 			children = (
 				D4CEB14A2BC199F6005A8867 /* LoginViewController.swift */,
-				D4CEB15A2BC2BB72005A8867 /* LoginAccessibility.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -211,9 +234,27 @@
 			isa = PBXGroup;
 			children = (
 				D4CEB11A2BC19465005A8867 /* OnboardingViewController.swift */,
-				D4CEB15D2BC2BBA4005A8867 /* OnboardingAccessibility.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		D4CEB17E2BC32282005A8867 /* AccessibilityTypes */ = {
+			isa = PBXGroup;
+			children = (
+				D4CEB1622BC2C71B005A8867 /* CreateAccountAccessibility.swift */,
+				D4CEB1572BC2BAED005A8867 /* HomeAccessibility.swift */,
+				D4CEB15A2BC2BB72005A8867 /* LoginAccessibility.swift */,
+				D4CEB15D2BC2BBA4005A8867 /* OnboardingAccessibility.swift */,
+				D4CEB17F2BC32282005A8867 /* AccessibilityTypes.swift */,
+			);
+			path = AccessibilityTypes;
+			sourceTree = "<group>";
+		};
+		D4CEB1882BC323C2005A8867 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +313,23 @@
 			productReference = D4CEB1332BC19466005A8867 /* AccessibilityDemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		D4CEB17C2BC32282005A8867 /* AccessibilityTypes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4CEB1812BC32282005A8867 /* Build configuration list for PBXNativeTarget "AccessibilityTypes" */;
+			buildPhases = (
+				D4CEB1792BC32282005A8867 /* Sources */,
+				D4CEB17A2BC32282005A8867 /* Frameworks */,
+				D4CEB17B2BC32282005A8867 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AccessibilityTypes;
+			productName = AccessibilityTypes;
+			productReference = D4CEB17D2BC32282005A8867 /* libAccessibilityTypes.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -293,6 +351,9 @@
 						CreatedOnToolsVersion = 15.3;
 						TestTargetID = D4CEB1122BC19465005A8867;
 					};
+					D4CEB17C2BC32282005A8867 = {
+						CreatedOnToolsVersion = 15.3;
+					};
 				};
 			};
 			buildConfigurationList = D4CEB10E2BC19465005A8867 /* Build configuration list for PBXProject "AccessibilityDemo" */;
@@ -311,6 +372,7 @@
 				D4CEB1122BC19465005A8867 /* AccessibilityDemo */,
 				D4CEB1282BC19466005A8867 /* AccessibilityDemoTests */,
 				D4CEB1322BC19466005A8867 /* AccessibilityDemoUITests */,
+				D4CEB17C2BC32282005A8867 /* AccessibilityTypes */,
 			);
 		};
 /* End PBXProject section */
@@ -348,17 +410,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4CEB11B2BC19465005A8867 /* OnboardingViewController.swift in Sources */,
-				D4CEB15B2BC2BB72005A8867 /* LoginAccessibility.swift in Sources */,
 				D4CEB1172BC19465005A8867 /* AppDelegate.swift in Sources */,
-				D4CEB15E2BC2BBA4005A8867 /* OnboardingAccessibility.swift in Sources */,
-				D4CEB1632BC2C71B005A8867 /* CreateAccountAccessibility.swift in Sources */,
 				D4CEB1192BC19465005A8867 /* SceneDelegate.swift in Sources */,
 				D4CEB1612BC2C5E3005A8867 /* CreateAccountViewController.swift in Sources */,
 				D4CEB14F2BC19B11005A8867 /* TextField.swift in Sources */,
 				D4CEB14B2BC199F6005A8867 /* LoginViewController.swift in Sources */,
 				D4CEB1492BC195CE005A8867 /* Button.swift in Sources */,
 				D4CEB1522BC19C1C005A8867 /* UIStoryboard+Extensions.swift in Sources */,
-				D4CEB1582BC2BAED005A8867 /* HomeAccessibility.swift in Sources */,
 				D4CEB1562BC2AE61005A8867 /* Optional+Extensions.swift in Sources */,
 				D4CEB1542BC2A8CF005A8867 /* HomeViewController.swift in Sources */,
 			);
@@ -376,10 +434,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4CEB15C2BC2BB99005A8867 /* LoginAccessibility.swift in Sources */,
 				D4CEB1382BC19466005A8867 /* AccessibilityDemoUITests.swift in Sources */,
-				D4CEB1592BC2BB23005A8867 /* HomeAccessibility.swift in Sources */,
-				D4CEB15F2BC2BBFA005A8867 /* OnboardingAccessibility.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4CEB1792BC32282005A8867 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4CEB1842BC32287005A8867 /* OnboardingAccessibility.swift in Sources */,
+				D4CEB1852BC32287005A8867 /* HomeAccessibility.swift in Sources */,
+				D4CEB1862BC32287005A8867 /* CreateAccountAccessibility.swift in Sources */,
+				D4CEB1872BC32287005A8867 /* LoginAccessibility.swift in Sources */,
+				D4CEB1802BC32282005A8867 /* AccessibilityTypes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -663,6 +730,30 @@
 			};
 			name = Release;
 		};
+		D4CEB1822BC32282005A8867 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D4CEB1832BC32282005A8867 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -698,6 +789,15 @@
 			buildConfigurations = (
 				D4CEB1442BC19466005A8867 /* Debug */,
 				D4CEB1452BC19466005A8867 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4CEB1812BC32282005A8867 /* Build configuration list for PBXNativeTarget "AccessibilityTypes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4CEB1822BC32282005A8867 /* Debug */,
+				D4CEB1832BC32282005A8867 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

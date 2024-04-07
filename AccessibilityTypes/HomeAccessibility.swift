@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum HomeAccessibility: String {
+public enum HomeAccessibility: String {
     case logoutButton
     case logoutOKAction
     case logoutCancelAction

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AccessibilityTypes
 
 class OnboardingViewController: UIViewController {
 

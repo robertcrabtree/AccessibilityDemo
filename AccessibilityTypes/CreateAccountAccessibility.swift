@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum CreateAccountAccessibility: String {
+public enum CreateAccountAccessibility: String {
     case view = "createAccountView"
     case emailTextField
     case passwordTextField

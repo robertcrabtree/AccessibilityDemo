@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AccessibilityTypes
 
 protocol LoginHandler: AnyObject {
     func didLogin()

@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum OnboardingAccessibility: String {
+public enum OnboardingAccessibility: String {
     case loginButton
     case createAccountButton
 }
