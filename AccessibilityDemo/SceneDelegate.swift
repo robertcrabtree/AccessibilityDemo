@@ -61,25 +61,33 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let nav = UINavigationController(rootViewController: vc)
         return nav
     }
+
+    private func transition(to vc: UIViewController) {
+        guard let window else { return }
+        window.rootViewController = vc
+        UIView.transition(
+            with: window,
+            duration: 0.3,
+            options: .transitionCrossDissolve,
+            animations: nil
+        )
+    }
 }
 
 extension SceneDelegate: LoginHandler {
     func didLogin() {
-        window?.rootViewController = makeHomeViewController()
-        window?.makeKeyAndVisible()
+        transition(to: makeHomeViewController())
     }
 }
 
 extension SceneDelegate: CreateAccountHandler {
     func didCreateAccount() {
-        window?.rootViewController = makeHomeViewController()
-        window?.makeKeyAndVisible()
+        transition(to: makeHomeViewController())
     }
 }
 
 extension SceneDelegate: LogoutHandler {
     func didLogout() {
-        window?.rootViewController = makeOnboardingViewController()
-        window?.makeKeyAndVisible()
+        transition(to: makeOnboardingViewController())
     }
 }
