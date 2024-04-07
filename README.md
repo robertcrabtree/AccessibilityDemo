@@ -1,10 +1,10 @@
 This project demonstrates how to define and use enums for accessibility in UI testing on the iOS platorm.
 
-Assuming we have a screen that looks like this...
+Let's use this screen as an example.
 
 ![onboarding-screen](https://github.com/robertcrabtree/AccessibilityDemo/assets/924214/8b2f4427-c99b-4527-a861-563d64ebf341)
 
-You are going to need to do the following...
+Now do the following:
 
 In a new file, separate from your view controller file, define your accessibilty enum.
 
