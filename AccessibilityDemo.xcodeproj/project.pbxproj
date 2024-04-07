@@ -23,7 +23,7 @@
 		D4CEB1562BC2AE61005A8867 /* Optional+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB1552BC2AE61005A8867 /* Optional+Extensions.swift */; };
 		D4CEB1612BC2C5E3005A8867 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB1602BC2C5E3005A8867 /* CreateAccountViewController.swift */; };
 		D4CEB1802BC32282005A8867 /* AccessibilityTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB17F2BC32282005A8867 /* AccessibilityTypes.swift */; };
-		D4CEB1842BC32287005A8867 /* OnboardingAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB15D2BC2BBA4005A8867 /* OnboardingAccessibility.swift */; };
+		D4CEB1842BC32287005A8867 /* WelcomeAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB15D2BC2BBA4005A8867 /* WelcomeAccessibility.swift */; };
 		D4CEB1852BC32287005A8867 /* HomeAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB1572BC2BAED005A8867 /* HomeAccessibility.swift */; };
 		D4CEB1862BC32287005A8867 /* CreateAccountAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB1622BC2C71B005A8867 /* CreateAccountAccessibility.swift */; };
 		D4CEB1872BC32287005A8867 /* LoginAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB15A2BC2BB72005A8867 /* LoginAccessibility.swift */; };
@@ -81,7 +81,7 @@
 		D4CEB1552BC2AE61005A8867 /* Optional+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Extensions.swift"; sourceTree = "<group>"; };
 		D4CEB1572BC2BAED005A8867 /* HomeAccessibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAccessibility.swift; sourceTree = "<group>"; };
 		D4CEB15A2BC2BB72005A8867 /* LoginAccessibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAccessibility.swift; sourceTree = "<group>"; };
-		D4CEB15D2BC2BBA4005A8867 /* OnboardingAccessibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingAccessibility.swift; sourceTree = "<group>"; };
+		D4CEB15D2BC2BBA4005A8867 /* WelcomeAccessibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeAccessibility.swift; sourceTree = "<group>"; };
 		D4CEB1602BC2C5E3005A8867 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		D4CEB1622BC2C71B005A8867 /* CreateAccountAccessibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountAccessibility.swift; sourceTree = "<group>"; };
 		D4CEB17D2BC32282005A8867 /* libAccessibilityTypes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAccessibilityTypes.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -244,7 +244,7 @@
 				D4CEB1622BC2C71B005A8867 /* CreateAccountAccessibility.swift */,
 				D4CEB1572BC2BAED005A8867 /* HomeAccessibility.swift */,
 				D4CEB15A2BC2BB72005A8867 /* LoginAccessibility.swift */,
-				D4CEB15D2BC2BBA4005A8867 /* OnboardingAccessibility.swift */,
+				D4CEB15D2BC2BBA4005A8867 /* WelcomeAccessibility.swift */,
 				D4CEB17F2BC32282005A8867 /* AccessibilityTypes.swift */,
 			);
 			path = AccessibilityTypes;
@@ -442,7 +442,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4CEB1842BC32287005A8867 /* OnboardingAccessibility.swift in Sources */,
+				D4CEB1842BC32287005A8867 /* WelcomeAccessibility.swift in Sources */,
 				D4CEB1852BC32287005A8867 /* HomeAccessibility.swift in Sources */,
 				D4CEB1862BC32287005A8867 /* CreateAccountAccessibility.swift in Sources */,
 				D4CEB1872BC32287005A8867 /* LoginAccessibility.swift in Sources */,
