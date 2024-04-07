@@ -52,11 +52,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             withIdentifier: "OnboardingViewController"
         ) as! OnboardingViewController
         vc.loginHandler = self
+        vc.createAccountHandler = self
         let nav = UINavigationController(rootViewController: vc)
         return nav
     }
 
-    private func makeMainViewController() -> UIViewController {
+    private func makeHomeViewController() -> UIViewController {
         let vc = UIStoryboard.main.instantiateViewController(
             withIdentifier: "HomeViewController"
         ) as! HomeViewController
@@ -64,13 +65,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         vc.logoutHandler = self
         return nav
     }
-
-
 }
 
 extension SceneDelegate: LoginHandler {
     func didLogin() {
-        window?.rootViewController = makeMainViewController()
+        window?.rootViewController = makeHomeViewController()
+        window?.makeKeyAndVisible()
+    }
+}
+
+extension SceneDelegate: CreateAccountHandler {
+    func didCreateAccount() {
+        window?.rootViewController = makeHomeViewController()
         window?.makeKeyAndVisible()
     }
 }

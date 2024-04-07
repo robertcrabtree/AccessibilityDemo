@@ -118,6 +118,59 @@
             </objects>
             <point key="canvasLocation" x="-411" y="-249"/>
         </scene>
+        <!--Create Account View Controller-->
+        <scene sceneID="dLc-id-KzX">
+            <objects>
+                <viewController storyboardIdentifier="CreateAccountViewController" id="Oiw-Ss-q9b" customClass="CreateAccountViewController" customModule="AccessibilityDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="20V-3d-KwM">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="qP7-PI-ax1">
+                                <rect key="frame" x="20" y="99" width="353" height="88"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ELH-ih-Owu" customClass="TextField" customModule="AccessibilityDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hix-m9-QYU" customClass="TextField" customModule="AccessibilityDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="54" width="353" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ou6-Dw-knP" customClass="Button" customModule="AccessibilityDemo" customModuleProvider="target">
+                                <rect key="frame" x="20" y="763.66666666666663" width="353" height="34.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Create Account"/>
+                                <connections>
+                                    <action selector="didTapCreateAccount" destination="Oiw-Ss-q9b" eventType="touchUpInside" id="286-sS-2Xx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="si0-Sk-hyy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="si0-Sk-hyy" firstAttribute="bottom" secondItem="Ou6-Dw-knP" secondAttribute="bottom" constant="20" id="DIJ-Mc-8ci"/>
+                            <constraint firstItem="si0-Sk-hyy" firstAttribute="trailing" secondItem="qP7-PI-ax1" secondAttribute="trailing" constant="20" id="VXj-rU-3Ay"/>
+                            <constraint firstItem="Ou6-Dw-knP" firstAttribute="leading" secondItem="si0-Sk-hyy" secondAttribute="leading" constant="20" id="Zzx-4I-jkn"/>
+                            <constraint firstItem="si0-Sk-hyy" firstAttribute="trailing" secondItem="Ou6-Dw-knP" secondAttribute="trailing" constant="20" id="cQw-bK-92m"/>
+                            <constraint firstItem="qP7-PI-ax1" firstAttribute="top" secondItem="si0-Sk-hyy" secondAttribute="top" constant="40" id="dTY-2Q-6ZX"/>
+                            <constraint firstItem="qP7-PI-ax1" firstAttribute="leading" secondItem="si0-Sk-hyy" secondAttribute="leading" constant="20" id="gEY-iG-ogv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="createAccountButton" destination="Ou6-Dw-knP" id="5g4-Th-57d"/>
+                        <outlet property="emailTextField" destination="ELH-ih-Owu" id="R55-2B-0bP"/>
+                        <outlet property="passwordTextField" destination="hix-m9-QYU" id="piH-wP-CY4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EqM-iQ-3gh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-411" y="429"/>
+        </scene>
         <!--Home View Controller-->
         <scene sceneID="SvO-rr-f2C">
             <objects>

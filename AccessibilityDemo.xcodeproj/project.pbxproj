@@ -27,6 +27,8 @@
 		D4CEB15C2BC2BB99005A8867 /* LoginAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB15A2BC2BB72005A8867 /* LoginAccessibility.swift */; };
 		D4CEB15E2BC2BBA4005A8867 /* OnboardingAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB15D2BC2BBA4005A8867 /* OnboardingAccessibility.swift */; };
 		D4CEB15F2BC2BBFA005A8867 /* OnboardingAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB15D2BC2BBA4005A8867 /* OnboardingAccessibility.swift */; };
+		D4CEB1612BC2C5E3005A8867 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB1602BC2C5E3005A8867 /* CreateAccountViewController.swift */; };
+		D4CEB1632BC2C71B005A8867 /* CreateAccountAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CEB1622BC2C71B005A8867 /* CreateAccountAccessibility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		D4CEB1572BC2BAED005A8867 /* HomeAccessibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAccessibility.swift; sourceTree = "<group>"; };
 		D4CEB15A2BC2BB72005A8867 /* LoginAccessibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAccessibility.swift; sourceTree = "<group>"; };
 		D4CEB15D2BC2BBA4005A8867 /* OnboardingAccessibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingAccessibility.swift; sourceTree = "<group>"; };
+		D4CEB1602BC2C5E3005A8867 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		D4CEB1622BC2C71B005A8867 /* CreateAccountAccessibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountAccessibility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +154,8 @@
 		D4CEB14C2BC19A3F005A8867 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				D4CEB1602BC2C5E3005A8867 /* CreateAccountViewController.swift */,
+				D4CEB1622BC2C71B005A8867 /* CreateAccountAccessibility.swift */,
 				D4CEB1532BC2A8CF005A8867 /* HomeViewController.swift */,
 				D4CEB1572BC2BAED005A8867 /* HomeAccessibility.swift */,
 				D4CEB14A2BC199F6005A8867 /* LoginViewController.swift */,
@@ -313,7 +319,9 @@
 				D4CEB15B2BC2BB72005A8867 /* LoginAccessibility.swift in Sources */,
 				D4CEB1172BC19465005A8867 /* AppDelegate.swift in Sources */,
 				D4CEB15E2BC2BBA4005A8867 /* OnboardingAccessibility.swift in Sources */,
+				D4CEB1632BC2C71B005A8867 /* CreateAccountAccessibility.swift in Sources */,
 				D4CEB1192BC19465005A8867 /* SceneDelegate.swift in Sources */,
+				D4CEB1612BC2C5E3005A8867 /* CreateAccountViewController.swift in Sources */,
 				D4CEB14F2BC19B11005A8867 /* TextField.swift in Sources */,
 				D4CEB14B2BC199F6005A8867 /* LoginViewController.swift in Sources */,
 				D4CEB1492BC195CE005A8867 /* Button.swift in Sources */,

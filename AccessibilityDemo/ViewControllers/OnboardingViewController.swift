@@ -22,11 +22,18 @@ class OnboardingViewController: UIViewController {
         navigationController?.pushViewController(vc, animated: true)
     }
 
-    @IBAction func didTapCreateAccount() {}
+    @IBAction func didTapCreateAccount() {
+        let vc = UIStoryboard.main.instantiateViewController(
+            withIdentifier: "CreateAccountViewController"
+        ) as! CreateAccountViewController
+        vc.createAccountHandler = createAccountHandler
+        navigationController?.pushViewController(vc, animated: true)
+    }
 
     // MARK: - Variables
 
     weak var loginHandler: LoginHandler?
+    weak var createAccountHandler: CreateAccountHandler?
 
     // MARK: - Lifecycle
 
