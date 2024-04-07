@@ -36,6 +36,8 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         navigationController?.navigationBar.tintColor = .systemOrange
         navigationItem.rightBarButtonItem = logoutButton
+
+        configureAccessibility()
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -44,6 +46,10 @@ class HomeViewController: UIViewController {
 
     // MARK: - Action Methods
     // MARK: - Helper Methods
+
+    private func configureAccessibility() {
+        logoutButton.testID = .logoutButton
+    }
 }
 
 // MARK: - UIAccessibilityIdentification

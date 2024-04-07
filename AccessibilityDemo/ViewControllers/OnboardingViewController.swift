@@ -38,6 +38,7 @@ class OnboardingViewController: UIViewController {
             action: #selector(dismissKeyboard)
         )
         view.addGestureRecognizer(tapper)
+        configureAccessibility()
     }
 
     // MARK: - Action Methods
@@ -47,6 +48,11 @@ class OnboardingViewController: UIViewController {
     }
 
     // MARK: - Helper Methods
+
+    private func configureAccessibility() {
+        loginButton.testID = .loginButton
+        createAccountButton.testID = .createAccountButton
+    }
 }
 
 // MARK: - UIAccessibilityIdentification

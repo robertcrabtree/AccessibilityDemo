@@ -46,6 +46,8 @@ class LoginViewController: UIViewController {
         emailTextField.delegate = self
         passwordTextField.delegate = self
         loginButton.isEnabled = false
+
+        configureAccessibility()
     }
 
     // MARK: - Action Methods
@@ -55,6 +57,13 @@ class LoginViewController: UIViewController {
     }
 
     // MARK: - Helper Methods
+
+    private func configureAccessibility() {
+        emailTextField.testID = .emailTextField
+        passwordTextField.testID = .passwordTextField
+        loginButton.testID = .loginButton
+        navigationItem.backBarButtonItem?.testID = .backButton
+    }
 }
 
 // MARK: - UITextFieldDelegate
