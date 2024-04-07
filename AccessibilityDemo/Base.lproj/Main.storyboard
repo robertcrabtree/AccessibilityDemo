@@ -194,9 +194,6 @@
                             <constraint firstItem="iRO-iE-UFE" firstAttribute="trailing" secondItem="XqT-aG-72C" secondAttribute="trailing" constant="20" id="EKA-7o-ZvW"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="welcomeLabel" destination="XqT-aG-72C" id="Ney-fr-4on"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tLh-ze-iXw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
