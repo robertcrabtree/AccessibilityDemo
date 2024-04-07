@@ -35,12 +35,6 @@ class OnboardingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let tapper = UITapGestureRecognizer(
-            target: self,
-            action: #selector(dismissKeyboard)
-        )
-        view.addGestureRecognizer(tapper)
         configureAccessibility()
     }
 

@@ -35,18 +35,9 @@ class CreateAccountViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let tapper = UITapGestureRecognizer(
-            target: self,
-            action: #selector(dismissKeyboard)
-        )
-        view.addGestureRecognizer(tapper)
-
-        navigationController?.navigationBar.tintColor = .systemOrange
-        emailTextField.delegate = self
-        passwordTextField.delegate = self
-        createAccountButton.isEnabled = false
-
+        configureView()
+        configureNavigationBar()
+        configureComponents()
         configureAccessibility()
     }
 
@@ -57,6 +48,24 @@ class CreateAccountViewController: UIViewController {
     }
 
     // MARK: - Helper Methods
+
+    private func configureNavigationBar() {
+        navigationController?.navigationBar.tintColor = .systemOrange
+    }
+
+    private func configureView() {
+        let tapper = UITapGestureRecognizer(
+            target: self,
+            action: #selector(dismissKeyboard)
+        )
+        view.addGestureRecognizer(tapper)
+    }
+
+    private func configureComponents() {
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
+        createAccountButton.isEnabled = false
+    }
 
     private func configureAccessibility() {
         view.testID = .view

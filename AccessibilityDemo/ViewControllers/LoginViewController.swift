@@ -35,18 +35,9 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let tapper = UITapGestureRecognizer(
-            target: self,
-            action: #selector(dismissKeyboard)
-        )
-        view.addGestureRecognizer(tapper)
-
-        navigationController?.navigationBar.tintColor = .systemOrange
-        emailTextField.delegate = self
-        passwordTextField.delegate = self
-        loginButton.isEnabled = false
-
+        configureView()
+        configureNavigationBar()
+        configureComponents()
         configureAccessibility()
     }
 
@@ -57,6 +48,24 @@ class LoginViewController: UIViewController {
     }
 
     // MARK: - Helper Methods
+
+    private func configureNavigationBar() {
+        navigationController?.navigationBar.tintColor = .systemOrange
+    }
+
+    private func configureView() {
+        let tapper = UITapGestureRecognizer(
+            target: self,
+            action: #selector(dismissKeyboard)
+        )
+        view.addGestureRecognizer(tapper)
+    }
+
+    private func configureComponents() {
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
+        loginButton.isEnabled = false
+    }
 
     private func configureAccessibility() {
         view.testID = .view
