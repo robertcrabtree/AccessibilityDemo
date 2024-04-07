@@ -14,6 +14,16 @@ class OnboardingViewController: UIViewController {
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var createAccountButton: UIButton!
 
+    @IBAction func didTapLogin() {
+        let vc = UIStoryboard.main.instantiateViewController(
+            withIdentifier: "LoginViewController"
+        ) as! LoginViewController
+        vc.loginHandler = loginHandler
+        navigationController?.pushViewController(vc, animated: true)
+    }
+
+    @IBAction func didTapCreateAccount() {}
+
     // MARK: - Variables
 
     weak var loginHandler: LoginHandler?
@@ -30,18 +40,20 @@ class OnboardingViewController: UIViewController {
         view.addGestureRecognizer(tapper)
     }
 
-    @IBAction func didTapLogin() {
-        let vc = UIStoryboard.main.instantiateViewController(
-            withIdentifier: "LoginViewController"
-        ) as! LoginViewController
-        vc.loginHandler = loginHandler
-        navigationController?.pushViewController(vc, animated: true)
-    }
-    @IBAction func didTapCreateAccount() {}
-
     // MARK: - Action Methods
 
     @objc private func dismissKeyboard() {
         view.endEditing(true)
+    }
+
+    // MARK: - Helper Methods
+}
+
+// MARK: - UIAccessibilityIdentification
+
+fileprivate extension UIAccessibilityIdentification {
+    var testID: OnboardingAccessibility? {
+        get { fatalError() }
+        set { accessibilityIdentifier = newValue?.rawValue }
     }
 }

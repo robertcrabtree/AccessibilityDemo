@@ -43,4 +43,14 @@ class HomeViewController: UIViewController {
     }
 
     // MARK: - Action Methods
+    // MARK: - Helper Methods
+}
+
+// MARK: - UIAccessibilityIdentification
+
+fileprivate extension UIAccessibilityIdentification {
+    var testID: HomeAccessibility? {
+        get { fatalError() }
+        set { accessibilityIdentifier = newValue?.rawValue }
+    }
 }

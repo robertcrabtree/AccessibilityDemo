@@ -53,7 +53,11 @@ class LoginViewController: UIViewController {
     @objc private func dismissKeyboard() {
         view.endEditing(true)
     }
+
+    // MARK: - Helper Methods
 }
+
+// MARK: - UITextFieldDelegate
 
 extension LoginViewController: UITextFieldDelegate {
     func textField(
@@ -63,5 +67,23 @@ extension LoginViewController: UITextFieldDelegate {
     ) -> Bool {
         loginButton.isEnabled = hasValidCredentials
         return true
+    }
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField === emailTextField {
+            passwordTextField.becomeFirstResponder()
+        } else {
+            passwordTextField.resignFirstResponder()
+        }
+        return true
+    }
+}
+
+// MARK: - UIAccessibilityIdentification
+
+fileprivate extension UIAccessibilityIdentification {
+    var testID: LoginAccessibility? {
+        get { fatalError() }
+        set { accessibilityIdentifier = newValue?.rawValue }
     }
 }
