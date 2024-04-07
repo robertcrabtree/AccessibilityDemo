@@ -1,4 +1,4 @@
-This project demonstrates how to define and use enums for accessibility in UI testing on the iOS platorm.
+This project demonstrates how to share accessibility enums between your app and UI tests in iOS.
 
 The first thing you need to do is create a static library for your acessibility types:
 
