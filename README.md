@@ -1,6 +1,6 @@
 # Intro
 
-This project demonstrates how to share accessibility enums between your app and UI tests in iOS.
+This project demonstrates how to share accessibility identifiers, defined as enums, between your app and UI tests in iOS.
 
 # Set Up
 
