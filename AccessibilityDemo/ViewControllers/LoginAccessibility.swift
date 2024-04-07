@@ -8,6 +8,7 @@
 import Foundation
 
 enum LoginAccessibility: String {
+    case view = "loginView"
     case emailTextField
     case passwordTextField
     case loginButton

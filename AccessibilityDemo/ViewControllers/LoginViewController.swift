@@ -59,6 +59,7 @@ class LoginViewController: UIViewController {
     // MARK: - Helper Methods
 
     private func configureAccessibility() {
+        view.testID = .view
         emailTextField.testID = .emailTextField
         passwordTextField.testID = .passwordTextField
         loginButton.testID = .loginButton
