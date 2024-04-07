@@ -23,7 +23,7 @@ Now let's use this screen as an example.
 Add a new file to the `AccessibilityTypes` target and define your accessibilty enum. Make sure it is `public`.
 
 ```swift
-public enum OnboardingAccessibility: String {
+public enum WelcomeAccessibility: String {
     case loginButton
     case createAccountButton
 }
@@ -38,7 +38,7 @@ In your view controller file, define a `fileprivate` extension to `UIAccessibili
 
 ```swift
 fileprivate extension UIAccessibilityIdentification {
-    var testID: OnboardingAccessibility? {
+    var testID: WelcomeAccessibility? {
         get { fatalError() }
         set { accessibilityIdentifier = newValue?.rawValue }
     }
@@ -64,7 +64,7 @@ Now let's shift our attention to the test case. But first, let's implement a han
 
 ```swift
 extension XCUIElementQuery {
-    subscript(key: OnboardingAccessibility) -> XCUIElement {
+    subscript(key: WelcomeAccessibility) -> XCUIElement {
         self[key.rawValue]
     }
 }
@@ -76,7 +76,7 @@ And finally, let's write the test case!
 func testLoginFlow() {
     let app = XCUIApplication()
     app.launch()
-    app.buttons[OnboardingAccessibility.loginButton].tap()
+    app.buttons[WelcomeAccessibility.loginButton].tap()
     // ... Add more test code ...
 }
 ```
