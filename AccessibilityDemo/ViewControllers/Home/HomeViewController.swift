@@ -23,7 +23,7 @@ class HomeViewController: UIViewController {
         title: "Log Out",
         primaryAction: UIAction(
             handler: { [weak self] _ in
-                self?.logoutHandler?.didLogout()
+                self?.handleLogout()
             }
         )
     )
@@ -52,6 +52,26 @@ class HomeViewController: UIViewController {
 
     private func configureAccessibility() {
         logoutButton.testID = .logoutButton
+    }
+
+    private func handleLogout() {
+        let alert = UIAlertController(
+            title: "Logout",
+            message: nil,
+            preferredStyle: .alert
+        )
+
+        let ok = UIAlertAction(title: "OK", style: .default) { _ in
+            self.logoutHandler?.didLogout()
+        }
+        ok.testID = .logoutOKAction
+        alert.addAction(ok)
+
+        let cancel = UIAlertAction(title: "Cancel", style: .cancel)
+        cancel.testID = .logoutCancelAction
+        alert.addAction(cancel)
+
+        present(alert, animated: true)
     }
 }
 

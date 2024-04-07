@@ -9,4 +9,6 @@ import Foundation
 
 enum HomeAccessibility: String {
     case logoutButton
+    case logoutOKAction
+    case logoutCancelAction
 }

@@ -38,6 +38,8 @@ final class AccessibilityDemoUITests: XCTestCase {
         XCTAssertTrue(app.buttons[HomeAccessibility.logoutButton].waitForExistence(timeout: 5))
 
         app.buttons[HomeAccessibility.logoutButton].tap()
+
+        app.alerts.buttons[HomeAccessibility.logoutOKAction].tap()
     }
 }
 
