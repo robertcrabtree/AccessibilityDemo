@@ -28,7 +28,7 @@ class TextField: UITextField {
 
     private func commonInit() {
         layer.borderColor = UIColor.systemOrange.cgColor
-        layer.borderWidth = 2
+        layer.borderWidth = 1
         layer.cornerRadius = 8
         layer.masksToBounds = true
     }
