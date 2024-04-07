@@ -1,18 +1,24 @@
+# Intro
+
 This project demonstrates how to share accessibility enums between your app and UI tests in iOS.
+
+# Set Up
 
 The first thing you need to do is create a static library for your acessibility types:
 
+```
 File -> New -> Target -> Static Library -> AccessibilityTypes
+```
 
 Navigate to your project file. You need to link the new library to your app and UI test targets. Do this for both targets:
 
 <img width="1127" alt="library" src="https://github.com/robertcrabtree/AccessibilityDemo/assets/924214/7e930123-1604-43a3-8573-4f6cf4bd658d">
 
+# Example
+
 Now let's use this screen as an example.
 
 ![onboarding-screen](https://github.com/robertcrabtree/AccessibilityDemo/assets/924214/8b2f4427-c99b-4527-a861-563d64ebf341)
-
-Now do the following:
 
 Add a new file to the `AccessibilityTypes` target and define your accessibilty enum.
 
